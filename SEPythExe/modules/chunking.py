@@ -4,6 +4,10 @@ This function is called chunking. It does the following:
 2.Breaks the string into chunks of chunk_size.
 3. Prints the chunks in one line separated by a comma and a space.
 """
+
+# Import these modules
+import SEPythExe.logger
+
 def chunking(str, cs): #define the function.
     chunks = [] #Initialise a list to contain the chunks (substrings)
     for i in range(0, len(str), cs): #for loop going through the input string, starting at 0 upto the end in chunks set by the cs variable
