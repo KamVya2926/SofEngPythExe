@@ -9,7 +9,7 @@ This function is called genbank_format. It does the following:
 
 """
 # Import these modules
-from SEPythExe.logger import logger
+#from SEPythExe.logger import logger
 
 def genbank_format(query_seq, chunk_size= 10):
     query_seq = ''.join([char for char in query_seq if char.isalpha()]).lower()
@@ -26,7 +26,7 @@ def genbank_format(query_seq, chunk_size= 10):
 #Second for loop going thorough substrings in chunks list
 #Starts from 0 going up to number of chunks set by len(chunks) in batches of 6
 #(f"{start_index:>3}:" prints index of the first character in the line right-aligned followed by a colon
-# Prints batches on separate lines with chunks seperated by a space
+# Prints batches on separate lines with chunks separated by a space
 
 
     output_lines = [] #Initialise a list to contain the batches of chunks
