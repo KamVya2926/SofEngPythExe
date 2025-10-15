@@ -9,10 +9,18 @@ This function is called genbank_format. It does the following:
 
 """
 # Import these modules
-#from SEPythExe.logger import logger
+from SEPythExe.logger import logger
 
 def genbank_format(query_seq, chunk_size= 10):
+    logger.debug(f"Function called with query_seq='{query_seq[:50]}...', chunk_size={chunk_size}")
+
+    if not query_seq:
+        logger.warning("Empty input sequence received.")
+        return ""
+
     query_seq = ''.join([char for char in query_seq if char.isalpha()]).lower()
+    logger.debug(f"Cleaned sequence: '{query_seq[:50]}...'")
+
     chunks = [] #initialise an empty list to store the chunks
 
 #Nested for loop
@@ -35,6 +43,8 @@ def genbank_format(query_seq, chunk_size= 10):
         line_chunks = chunks[i:i + 6] #Batch of chunks assigned to variable
         line = f"{start_index:>3}: {' '.join(line_chunks)}"
         output_lines.append(line) #Append (add) the batches of chunks to the list
+
+    logger.info(f"Generated {len(output_lines)} formatted lines.")
     return '\n'.join(output_lines) #return the batches on separate lines
 
 #Example

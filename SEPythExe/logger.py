@@ -1,5 +1,6 @@
 # logger.py
 import logging
+from logging import Logger
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
@@ -37,4 +38,4 @@ def create_logger():
 
 
 # Instantiate the logger
-logger = create_logger()
+logger: Logger = create_logger()
