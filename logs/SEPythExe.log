@@ -1,0 +1,15 @@
+2025-10-16 09:32:23,687 [DEBUG] Function called with query_seq='GCTGAGACTTCCTGGACGGGGGACAGGCTGTGGGGTTTCTCAGATAACTG...', chunk_size=10
+2025-10-16 09:32:23,687 [DEBUG] Cleaned sequence: 'gctgagacttcctggacgggggacaggctgtggggtttctcagataactg...'
+2025-10-16 09:32:23,687 [INFO] Generated 12 formatted lines.
+2025-10-16 09:35:58,486 [DEBUG] This is a debug message
+2025-10-16 09:35:58,486 [INFO] This is an info message
+2025-10-16 09:35:58,486 [ERROR] This is an error message
+2025-10-16 09:40:20,081 [DEBUG] Function called with query_seq='GCTGAGACTTCCTGGACGGGGGACAGGCTGTGGGGTTTCTCAGATAACTG...', chunk_size=10
+2025-10-16 09:40:20,082 [DEBUG] Cleaned sequence: 'gctgagacttcctggacgggggacaggctgtggggtttctcagataactg...'
+2025-10-16 09:40:20,082 [INFO] Generated 12 formatted lines.
+2025-10-16 09:40:42,669 [DEBUG] Function called with query_seq='GCTGAGACTTCCTGGACGGGGGACAGGCTGTGGGGTTTCTCAGATAACTG...', chunk_size=10
+2025-10-16 09:40:42,670 [DEBUG] Cleaned sequence: 'gctgagacttcctggacgggggacaggctgtggggtttctcagataactg...'
+2025-10-16 09:40:42,670 [INFO] Generated 12 formatted lines.
+2025-10-16 09:41:11,471 [DEBUG] This is a debug message
+2025-10-16 09:41:11,471 [INFO] This is an info message
+2025-10-16 09:41:11,471 [ERROR] This is an error message

@@ -22,11 +22,11 @@ def create_logger():
     stream_formatter = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
     stream_handler.setFormatter(stream_formatter)
 
-    # File handler with ERROR level and rotating file configuration
+    # File handler with DEBUG level and rotating file configuration
     file_handler = RotatingFileHandler(str(parent_directory) + '/logs/SEPythExe.log',
                                        maxBytes=500000,  # 500 KB
                                        backupCount=2)
-    file_handler.setLevel(logging.ERROR)
+    file_handler.setLevel(logging.DEBUG) #If level is set higher, for instance at ERROR, then any output for a lower level such as DEBUG will only be print to the terminal and not into a log file
     file_formatter = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
     file_handler.setFormatter(file_formatter)
 

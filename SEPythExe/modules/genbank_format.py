@@ -12,10 +12,10 @@ This function is called genbank_format. It does the following:
 from SEPythExe.logger import logger
 
 def genbank_format(query_seq, chunk_size= 10):
-    logger.debug(f"Function called with query_seq='{query_seq[:50]}...', chunk_size={chunk_size}")
-
+    logger.debug(f"Function called with query_seq='{query_seq[:50]}...', chunk_size={chunk_size}") #Logs message at debug level. Takes first 50 characters of query sequence - whole sequence not taken so logs are not filled with huge amounts of data.
+                                                                                                    #Wraps substring in quotes and adds '...' to indicate that the string has been truncated
     if not query_seq:
-        logger.warning("Empty input sequence received.")
+        logger.error("Empty input received.")
         return ""
 
     query_seq = ''.join([char for char in query_seq if char.isalpha()]).lower()
