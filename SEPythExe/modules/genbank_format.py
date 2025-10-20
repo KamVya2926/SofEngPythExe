@@ -3,7 +3,7 @@ This function is called genbank_format. It does the following:
 1. Takes a string (query_seq) and a chunk size (chunk_size), which is set at 10 characters.
 2.Breaks the string into chunks of chunk_size.
 3. Prints the output in the format of GenBank DNA sequence entries. So,
-    6 chunks per line (ignoring everything apart from letters, and always in lower case - line 15)
+    6 chunks per line (ignoring everything apart from letters, and always in lower case)
     with each line prefixed with the number of the first character in the line
     based on its order in the original string.
 

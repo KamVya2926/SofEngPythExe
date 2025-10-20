@@ -13,3 +13,6 @@
 2025-10-16 09:41:11,471 [DEBUG] This is a debug message
 2025-10-16 09:41:11,471 [INFO] This is an info message
 2025-10-16 09:41:11,471 [ERROR] This is an error message
+2025-10-20 13:52:08,850 [DEBUG] Function called with query_seq='GCTGAGACTTCCTGGACGGGGGACAGGCTGTGGGGTTTCTCAGATAACTG...', chunk_size=10
+2025-10-20 13:52:08,850 [DEBUG] Cleaned sequence: 'gctgagacttcctggacgggggacaggctgtggggtttctcagataactg...'
+2025-10-20 13:52:08,850 [INFO] Generated 12 formatted lines.
