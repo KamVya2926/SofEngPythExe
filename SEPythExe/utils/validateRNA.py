@@ -1,11 +1,11 @@
 """
-A utility to check if an RNA sequence is a string, in lowercase and only contains A, U, G, C characters. If a Thiamine (T) is found
+A utility to check if an RNA sequence is a string, in lowercase and only contains A, U, G, C characters. If a Thymine (T) is found
 then it gives a warning asking the user to check if the sequence is RNA or DNA
 """
 
 from SEPythExe.logger import logger
 
-valid_rna_bases = set("ACGU")
+valid_rna_bases = set("acgu")
 
 def validate_rna(rna_sequence):
 
@@ -21,6 +21,9 @@ def validate_rna(rna_sequence):
     #check for invalid characters, i.e. any other than ACGU
     invalid_bases = set(rna_sequence).difference(valid_rna_bases)
     if invalid_bases:
-        logger.error(f"Input sequence contains invalid bases: {invalid_bases}. Use only A, C, G, U")
-        raise ValueError("Input sequence contains invalid bases. Use only A, C, G, U " )
+        logger.error(f"Input sequence contains invalid bases: {invalid_bases}. Use only a, c, g, u")
+        raise ValueError("Input sequence contains invalid bases. Use only a, c, g, u" )
     return True
+
+#qs = "GCTGAGACTTCCTGGACGGGGGACAGGCTGTGGGGTTTCTCAGATAACTGGGCCCCTGCGCTCAGGAGGCCTTCACCCTCTGCTCTGGGTAAAGTTCATTGGAACAGAAAGAAATGGATTTATCTGCTCTTCGCGTTGAAGAAGTACAAAATGTCATTAATGCTATGCAGAAAATCTTAGAGTGTCCCATCTGTCTGGAGTTGATCAAGGAACCTGTCTCCACAAAGTGTGACCACATATTTTGCAAATTTTGCATGCTGAAACTTCTCAACCAGAAGAAAGGGCCTTCACAGTGTCCTTTATGTAAGAATGATATAACCAAAAGGAGCCTACAAGAAAGTACGAGATTTAGTCAACTTGTTGAAGAGCTATTGAAAATCATTTGTGCTTTTCAGCTTGACACAGGTTTGGAGTATGCAAACAGCTATAATTTTGCAAAAAAGGAAAATAACTCTCCTGAACATCTAAAAGATGAAGTTTCTATCATCCAAAGTATGGGCTACAGAAACCGTGCCAAAAGACTTCTACAGAGTGAACCCGAAAATCCTTCCTTGCAGGAAACCAGTCTCAGTGTCCAACTCTCTAACCTTGGAACTGTGAGAACTCTGAGGACAAAGCAGCGGATACAACCTCAAAAGACGTCTGTCTACATTGAATTGGGATCTGATTCTTCTGAAGATACCGTTAATAAGGCAACTTATTGCAGTGTGGGAGATCAAG"
+#validate_rna(qs)

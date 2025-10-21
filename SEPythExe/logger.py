@@ -19,7 +19,7 @@ def create_logger():
     # Stream handler with INFO level
     stream_handler = logging.StreamHandler()
     stream_handler.setLevel(logging.DEBUG)
-    stream_formatter = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
+    stream_formatter = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s line %(lineno)d")
     stream_handler.setFormatter(stream_formatter)
 
     # File handler with DEBUG level and rotating file configuration
