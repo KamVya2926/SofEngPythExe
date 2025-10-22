@@ -24,7 +24,7 @@ def create_logger():
 
     # File handler with DEBUG level and rotating file configuration
     file_handler = RotatingFileHandler(str(parent_directory) + '/logs/SEPythExe.log',
-                                       maxBytes=500000,  # 500 KB
+                                       maxBytes=50000,  # 500 KB
                                        backupCount=2)
     file_handler.setLevel(logging.DEBUG) #If level is set higher, for instance at ERROR, then any output for a lower level such as DEBUG will only be print to the terminal and not into a log file
     file_formatter = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
