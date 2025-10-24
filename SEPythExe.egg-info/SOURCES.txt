@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+SEPythExe/__init__.py
+SEPythExe.egg-info/PKG-INFO
+SEPythExe.egg-info/SOURCES.txt
+SEPythExe.egg-info/dependency_links.txt
+SEPythExe.egg-info/top_level.txt
